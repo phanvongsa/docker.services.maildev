@@ -16,3 +16,10 @@ services:
       driver: "json-file"
       options:
         max-size: "1m"
+    networks:
+      - localnet
+
+networks:
+  localnet:
+    name: local-network
+    external: true
